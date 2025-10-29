@@ -49,6 +49,38 @@ ul,ol{
      font-size: 20px;
      color: black;
      transition: .4s;
+     position: relative;
+     display: inline-block;
+}
+
+.menu ul a:hover{
+    font-size: 21px;
+}
+.menu ul a::before{
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: red;
+    content: "";
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+.menu ul a::after{
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: red;
+    content: "";
+    top: 0;
+    right: 0;
+    transition: .4s;
+}
+.menu ul a:hover::before{
+    width: 60%;
+}
+.menu ul a:hover::after{
+    width: 60%;
 }
 .menu ul a:hover{
     color: red;
@@ -86,11 +118,19 @@ ul,ol{
 .content .textOne h1{
     color: teal;
     text-align: center;
-    padding: 60px 80px;
+    padding: 0px 80px;
+    margin-top: 60px;
     
 
 }
 
+.content .textOne p{
+    margin-top: 40px;
+}
+
+.content .textTwo p{
+    margin-top: 40px;
+}
 .content .textOne h1 b{
     color: red;
 }
@@ -106,17 +146,48 @@ ul,ol{
 .content video{
     margin-top: 10PX;
     height: 500PX;
+    transition: .4s;
    
 }
 
 .content .textTwo h1{
     color: teal;
     text-align: center;
-     padding: 60px 80px;
-    
+     padding: 0px 0px;
+     margin-top: 60px;
+     margin-left: 140px;
+    position: relative;
+    display: inline-block;
 
 }
 
+.content .textTwo h1::before{
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: purple;
+    content: "";
+    left: -60%;
+    bottom: 50%;
+    transition: .4s;
+}
+
+.content .textTwo h1::after{
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: purple;
+    content: "";
+    right: -60%;
+    top: 50%;
+    transition: .4s;
+}
+.content .textTwo h1:hover::before{
+    width: 50%;
+}
+.content .textTwo h1:hover::after{
+    width: 50%;
+}
 .content .textTwo h1 b{
     color: red;
 }
@@ -141,23 +212,73 @@ ul,ol{
 .collection .hinata img{
      padding: 10px;
      width: 600px;
+     transition: .4s;
 }
 .collection .naruto img{
      padding: 10px;
      width: 600px;
+     transition: .4s;
 
 }
 
+.collection .naruto img:hover{
+    width: 700px;
+    border-radius: 50px;
+}
+.collection .hinata img:hover{
+    width: 700px;
+    border-radius: 50px;
+}
 .overlay .anime h1{
     color: white;
-    padding: 50px 20px 30px 20px;
+    padding: 0px 20px 0px 20px;
+    margin-top: 25px;
     font-weight: 800;
     font-size: 40px;
     font-family: sans-serif;
-    
+    transition: .4s;
+  
+   
 }
 
+.overlay .anime h1:hover{
+    font-size: 41px;
+    color: red;
+}
+.overlay .anime h1{
+      position: relative;
+    display: inline-block;
+
+}
+.overlay .anime h1::before{
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background: red;
+    content: "";
+    left: 0;
+    bottom: 0;
+     transition: .4s;
+}
+.overlay .anime h1::after{
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background: red;
+    content: "";
+    right: 0;
+    top: 0;
+     transition: .4s;
+}
+.overlay .anime h1:hover::before{
+    width: 50%;
+}
+
+.overlay .anime h1:hover::after{
+    width: 50%;
+}
 .overlay .anime h3{
+    margin-top: 20px;
     color: blueviolet;
     font-weight: 500;
     font-size: 20px;
@@ -165,4 +286,64 @@ ul,ol{
     padding: 0 20px;
     align-items: center;
     
+}
+
+.content .textTwo h1{
+    display: inline-block;
+    
+}
+
+.content .textTwo h1:hover{
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+}
+
+.footer{
+    background: url(../imgs/b.png);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footerOverlay{
+   height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+
+}
+
+.footerOverlay h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 90px 0px;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+
+}
+
+.footerOverlay h1:hover{
+    font-size: 45px;
+    font-family: sans-serif;
+
+}
+.footerOverlay h1 b{
+    color: red ;
+}
+
+.copyRight {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 50px;
+}
+
+.copyright-info {
+    font-size: 0.9em; 
+    line-height: 1.5; 
 }
