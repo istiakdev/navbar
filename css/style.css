@@ -1,47 +1,168 @@
+/* All common css Start */
 *{
-    padding: 0;
     margin: 0;
-}
-.navbar{
-    background-color: red;
-    width: 100%;
-    height: 50px;
-    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}    
 
-}
-
-.navbar ul{
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+a{
+    text-decoration: none;
 }
 
-.navbar .w{
-     background-color: white;
-    width: 60%;
-    height: 30px;
-    margin: 0 auto;     
-    border-radius: 5px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.navbar ul{
-  
+ul,ol{
     list-style-type: none;
- 
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* All common css End */
+
+/* Header Part Start */
+.headerPart{
+
+    background-color: rgba(0, 0, 0, 0.938);
+    padding: 20px 0px;
     
 }
 
+.headerPart .container{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
 
-.navbar ul li a{
-      text-decoration: none;
-      padding: 0px 30px;
-      color: black;
-      font-size: 20px;
-      text-transform: uppercase;
+.menu ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu ul a{
+     align-items: center;
+     text-align: center;
+     padding: 0 30px;
+     text-transform: uppercase;
+     font-weight: 700;
+     font-size: 20px;
+     color: black;
+     transition: .4s;
+}
+.menu ul a:hover{
+    color: red;
+}
+/* Header Part End */
+
+/* Banner Part Start */
+.banner{
+    background: url(../imgs/banner/1.jpeg);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+     
+   
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 400px;
+    
+    
+}
+/* Banner Part End */
+
+.content{
+    display: flex;
+     justify-content: space-between;
+    
+    
+    
+}
+
+.content .textOne h1{
+    color: teal;
+    text-align: center;
+    padding: 60px 80px;
+    
+
+}
+
+.content .textOne h1 b{
+    color: red;
+}
+.content .textOne p b{
+    color: black;
+}
+.content .textOne p{
+    
+    color: purple;
+    text-align: center;
+    padding: 0 20px;
+}
+.content video{
+    margin-top: 10PX;
+    height: 500PX;
+   
+}
+
+.content .textTwo h1{
+    color: teal;
+    text-align: center;
+     padding: 60px 80px;
+    
+
+}
+
+.content .textTwo h1 b{
+    color: red;
+}
+
+.content .textTwo p{
+    color: purple;
+    text-align: center;
+}
+.content .textTwo p b{
+    color: black;
+}
+
+.content .textTwo p{
+    padding: 0 20px;
+}
+
+.collection{
+    display: flex;
+    justify-content: space-around;
+}
+
+.collection .hinata img{
+     padding: 10px;
+     width: 600px;
+}
+.collection .naruto img{
+     padding: 10px;
+     width: 600px;
+
+}
+
+.overlay .anime h1{
+    color: white;
+    padding: 50px 20px 30px 20px;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: sans-serif;
+    
+}
+
+.overlay .anime h3{
+    color: blueviolet;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 0 20px;
+    align-items: center;
+    
 }
